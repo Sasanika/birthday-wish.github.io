@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="icon" type="image/x-icon" href="second.png">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="birthday-cake">
+        <div class="cake">
+          <div class="middle"></div>
+          <div class="chocs"></div>
+          <div class="top"></div>
+        </div>
+        <div class="candles">
+          <div class="flame"></div>
+          <div class="flame2"></div>
+          <div class="flame3"></div>
+          <div class="text">Happy Birthday!</div>
+          <div class="shadows"></div>
+        </div>
+        <p class="text2">*click on the flame to blow candles</p>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content zoom">
+          <span class="close">&times;</span>
+          <img src="kiss.webp" alt="Birthday GIF" width="200">
+          <p>To the sweetest boyfriend ever, happy birthday! 🎂</p>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+       $(document).ready(function() {
+    $(".candles").click(function() {
+        // Show the modal
+        $("#myModal").css("display", "block");
+    });
+
+    // Close the modal when the close button is clicked
+    $(".close").click(function() {
+        $("#myModal").css("display", "none");
+    });
+});
+      </script>
+</body>
+</html>
